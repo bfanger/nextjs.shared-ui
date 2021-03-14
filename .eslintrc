@@ -39,8 +39,8 @@
   "settings": {
     "import/resolver": {
       "root-import": {
-        "rootPathPrefix": "@",
-        "rootPathSuffix": "react",
+        "rootPathPrefix": "@react",
+        "rootPathSuffix": "./next/app1/react",
         "extensions": [".js", ".ts", ".tsx", ".jsx", ".mdx"]
       }
     }

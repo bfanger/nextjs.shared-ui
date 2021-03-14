@@ -4,7 +4,7 @@ import {
 } from './styled'
 import StyledProps from '@react/props/StyledProps'
 
-export interface Props {}
+export interface Props { }
 
 const P: React.FC<StyledProps> = ({ children, ...other }) => {
   return <Paragraph children={children} {...other} />

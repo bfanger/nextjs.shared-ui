@@ -1,10 +1,12 @@
 {
   "name": "app2",
   "version": "1.0.0",
-  "description": "app2",
+  "description": "app1",
   "main": "index.js",
   "scripts": {
-    "build": "next build"
+    "build": "next build",
+    "start": "nodemon",
+    "prod": "cross-env NODE_ENV=production nodemon"
   },
   "author": "TessavWalstijn",
   "license": "MIT",
@@ -17,14 +19,18 @@
     "@types/styled-system": "~5.1.10",
     "babel-plugin-styled-components": "~1.12.0",
     "core-js": "~3.8.1",
+    "cors": "~2.8.5",
+    "cross-env": "~7.0.3",
     "framer-motion": "~3.2.2-rc.1",
     "next": "~10.0.5",
+    "nodemon": "~2.0.7",
     "react": "~17.0.1",
     "react-dom": "~17.0.1",
     "react-markdown": "~5.0.3",
     "styled-components": "~5.2.1",
     "styled-system": "~5.1.5",
-    "typescript": "~4.1.3"
+    "typescript": "~4.1.3",
+    "vhost": "~3.0.2"
   },
   "devDependencies": {
     "eslint": "~7.4.0",
