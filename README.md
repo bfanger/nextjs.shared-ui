@@ -44,3 +44,7 @@ Please quit all running processes of this project
 `npm run build2` to build app2  
 `npm run start2` to start app2  
 `npm run prod2` to run with the nextjs production build  
+
+## Express server issue
+
+Yes I am aware that the custom express server issue I have found is not resolved in the other branches. But that is not the focus of the [SO question](https://stackoverflow.com/questions/66570634/shared-ui-in-nextjs-unable-to-receive-imported-modules-value-in-build-process)
