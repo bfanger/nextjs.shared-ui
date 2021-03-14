@@ -1,13 +1,13 @@
 import React from 'react'
 import {
-  A,
+  Link,
 } from './styled'
 import StyledProps from '@react/props/StyledProps'
 
 export interface Props {}
 
-const Link: React.FC<StyledProps> = ({ children, ...other }) => {
-  return <A children={children} {...other} />
+const A: React.FC<StyledProps> = ({ children, ...other }) => {
+  return <Link children={children} {...other} />
 }
 
-export default Link;
+export default A;
