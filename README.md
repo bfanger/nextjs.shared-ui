@@ -34,10 +34,9 @@ App2 works as expected without issues.
 
 `npm run i-all` to install all packages for **all** npm projects  
 
-
-`npm run build` to mimic the main build process (only builds app1)
-`npm run start` to start mimicked server
-`npm run prod` to run with the nextjs production build of app1
+`npm run build` to mimic the main build process (only builds app1)  
+`npm run start` to start mimicked server  
+`npm run prod` to run with the nextjs production build of app1  
 
 Because app2 is running on its own:  
 Please quit all running processes of this project
