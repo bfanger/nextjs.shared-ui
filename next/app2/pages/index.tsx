@@ -9,7 +9,7 @@ const Home = (data: any) => {
   const { lowlight } = app2MainTheme.colors;
 
   // NOTE: That this is logged while building next
-  console.log('\n\n=> logging app2 lowlight:', lowlight);
+  console.log('\n=> logging app2 lowlight:', lowlight, '\n');
 
   return (
     <>

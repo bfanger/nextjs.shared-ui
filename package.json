@@ -10,7 +10,8 @@
     "build": "npm run build1 && npm run build2",
     "build1": "cd next/app1/ && npm run build",
     "build2": "cd next/app2/ && npm run build",
-    "start": "nodemon"
+    "prod-a": "cross-env NODE_ENV=production nodemon ./index-a.js",
+    "prod-b": "cross-env NODE_ENV=production nodemon ./index-b.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "@types/styled-system": "~5.1.10",
     "core-js": "~3.8.1",
     "cors": "~2.8.5",
+    "cross-env": "^7.0.3",
     "express": "~4.17.1",
     "framer-motion": "~3.10.2",
     "next": "^11.0.1",
