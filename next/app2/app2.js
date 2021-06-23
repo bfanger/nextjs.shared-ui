@@ -2,20 +2,20 @@ const express = require('express')
 const next = require('next')
 
 const dev = process.env.NODE_ENV !== 'production'
-const next1 = next({ dev })
-const handle1 = next1.getRequestHandler()
-const app1 = express()
+const next2 = next({ dev })
+const handle2 = next2.getRequestHandler()
+const app2 = express()
 
-next1.prepare().then(() => {
-  const route1 = (req, res) => {
-    return next1.render(req, res, `/`, req.query)
+next2.prepare().then(() => {
+  const route2 = (req, res) => {
+    return next2.render(req, res, `/`, req.query)
   }
 
-  app1.get('/', route1)
+  app2.get('/', route2)
 
-  app1.all('*', (req, res) => {
-    return handle1(req, res)
+  app2.all('*', (req, res) => {
+    return handle2(req, res)
   })
 })
 
-module.exports = app1
+module.exports = app2
