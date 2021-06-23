@@ -39,7 +39,7 @@
   "settings": {
     "import/resolver": {
       "root-import": {
-        "rootPathPrefix": "@react",
+        "rootPathPrefix": "@test/ui",
         "rootPathSuffix": "../../react",
         "extensions": [".js", ".ts", ".tsx", ".jsx", ".mdx"]
       }

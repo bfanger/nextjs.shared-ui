@@ -1,5 +1,6 @@
+import * as React from 'react'
 import { MainCont } from './styled'
-import StyledProps from '@react/props/StyledProps'
+import StyledProps from '../../props/StyledProps'
 
 export interface ContainerProps extends StyledProps { }
 

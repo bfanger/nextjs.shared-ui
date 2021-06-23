@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { space, color, typography, layout } from 'styled-system'
-import StyledProps from '@react/props/StyledProps'
+import StyledProps from '../../props/StyledProps'
 
 export const MainCont = styled.div<StyledProps>`
   flex-direction: column;

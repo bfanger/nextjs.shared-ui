@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { space, color, typography, layout } from 'styled-system'
-import StyledProps from '@react/props/StyledProps'
+import StyledProps from '../../../props/StyledProps'
 
 export const Link = styled(motion.a)<StyledProps>`
   font-family: 'Primary';

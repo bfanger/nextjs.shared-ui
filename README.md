@@ -1,1 +1,1 @@
-# nextjs-shared-ui
+# nextjs.shared-ui

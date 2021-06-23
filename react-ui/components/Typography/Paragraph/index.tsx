@@ -2,7 +2,7 @@ import React from 'react'
 import {
   Paragraph,
 } from './styled'
-import StyledProps from '@react/props/StyledProps'
+import StyledProps from '../../../props/StyledProps'
 
 export interface Props {}
 

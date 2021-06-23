@@ -1,7 +1,7 @@
 const path = require('path')
 
 const aliasPathsToResolve = [
-  { name: '@react', path: path.resolve(__dirname, '../../react') },
+  { name: '@test/ui', path: path.resolve(__dirname, '../../react') },
   { name: '@utils', path: path.resolve(__dirname, '../../utils') },
 ]
 
@@ -38,4 +38,4 @@ module.exports = {
 
     return config
   },
-};
+}

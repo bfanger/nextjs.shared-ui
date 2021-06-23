@@ -19,12 +19,11 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@react/*": ["./react/*"],
-      "@utils/*": ["./utils/*"]
+      "@react/*": ["./*"],
     }
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": [ "**/*.ts", "**/*.tsx"]
 }

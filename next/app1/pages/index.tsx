@@ -1,12 +1,17 @@
 import { ThemeProvider } from 'styled-components'
 import Head from 'next/head'
-import { app1MainTheme } from '@react/themes'
-import H from '@react/components/Typography/Header'
-import P from '@react/components/Typography/Paragraph'
-import Container from '@react/components/Container'
+import theme from '@test/ui/themes'
+import H from '@test/ui/components/Typography/Header'
+import P from '@test/ui/components/Typography/Paragraph'
+import Container from '@test/ui/components/Container'
 
 const Home = (data: any) => {
-  const { lowlight } = app1MainTheme.colors;
+  // const them = data.theme;
+  const { app1MainTheme } = theme;
+  console.log('\n\n=> logging app1 app1MainTheme:', app1MainTheme);
+  const { colors } = app1MainTheme;
+  console.log('\n\n=> logging app1 colors:', colors);
+  const { lowlight } = colors;
 
   // NOTE: That this is logged while building next
   console.log('\n\n=> logging app1 lowlight:', lowlight);
@@ -32,7 +37,8 @@ export async function getStaticProps() {
   // Dummy data
   const page = {
     title: "App 1",
-    text: "Awesome app 1 text here"
+    text: "Awesome app 1 text here",
+    // theme
   }
 
   return {

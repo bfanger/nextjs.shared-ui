@@ -1,11 +1,12 @@
 import { ThemeProvider } from 'styled-components'
 import Head from 'next/head'
-import { app2MainTheme } from '@react/themes'
-import H from '@react/components/Typography/Header'
-import P from '@react/components/Typography/Paragraph'
-import Container from '@react/components/Container'
+import theme from '@test/ui/themes'
+import H from '@test/ui/components/Typography/Header'
+import P from '@test/ui/components/Typography/Paragraph'
+import Container from '@test/ui/components/Container'
 
 const Home = (data: any) => {
+  const { app2MainTheme } = theme;
   const { lowlight } = app2MainTheme.colors;
 
   // NOTE: That this is logged while building next

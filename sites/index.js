@@ -4,8 +4,8 @@ const express = require('express')
 const cors = require('cors')
 const vhost = require('vhost')
 
-const app1 = require('./sites/app1')
-const app2 = require('./sites/app2')
+const app1 = require('./app1')
+const app2 = require('./app2')
 
 const port = 3030;
 
