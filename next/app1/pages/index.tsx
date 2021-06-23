@@ -27,7 +27,7 @@ const Home = (data: any) => {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
   // Dummy data
   const page = {
@@ -37,7 +37,6 @@ export async function getStaticProps() {
 
   return {
     props: page,
-    revalidate: 1200,
   }
 }
 
