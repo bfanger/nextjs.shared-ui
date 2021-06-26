@@ -1,0 +1,29 @@
+{
+  "name": "shared-ui-poc",
+  "private": true,
+  "workspaces": [
+    "sites/*",
+    "shared-ui"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others npm:dev:*",
+    "dev:site1": "yarn --cwd sites/site1 dev",
+    "dev:site2": "yarn --cwd sites/site2 dev",
+    "build": "concurrently --kill-others npm:build:*",
+    "build:site1": "yarn --cwd sites/site1 build",
+    "build:site2": "yarn --cwd sites/site2 build",
+    "start": "concurrently --kill-others npm:start:*",
+    "start:site1": "yarn --cwd sites/site1 start",
+    "start:site2": "yarn --cwd sites/site2 start",
+    "lint": "prettier --check sites shared-ui &&eslint sites",
+    "format": "prettier --write sites shared-ui && eslint sites --fix"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.1"
+  }
+}
